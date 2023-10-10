@@ -4,9 +4,9 @@ const cors = require("cors");
 const morgan = require("morgan");
 
 const planetsRouter = require("./routes/planets/planets.router");
+const launchesRouter = require("./routes/launches/launches.router");
 
 const app = express();
-const serveDirectory = path.join(__dirname, "..", "public");
 
 // Cross Origin Communication
 app.use(
@@ -18,9 +18,10 @@ app.use(
 app.use(morgan("combined"));
 
 app.use(express.json()); // middleware to parse JSON
-app.use(express.static(serveDirectory)); // middleware to serve frontend
+app.use(express.static(path.join(__dirname, "..", "public"))); // middleware to serve frontend
 
 app.use(planetsRouter);
+app.use(launchesRouter);
 
 // root router
 app.get("/", (req, res) => {
