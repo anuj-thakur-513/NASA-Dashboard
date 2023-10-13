@@ -10,24 +10,23 @@ Web project built with MERN. It lets the user schedule and manage rocket launche
 Clone the project
 
 ```bash
-  git clone https://github.com/anuj-thakur-513/NASA-Dashboard
+git clone https://github.com/anuj-thakur-513/NASA-Dashboard
 ```
 
 Go to the project directory
 
 ```bash
-  cd nasa-dashboard
+cd nasa-dashboard
 ```
 
 Install dependencies
 
 ```bash
-  npm install
+npm install
 ```
 
-Start the server
+Start both Front-End and Back-End Servers
 
 ```bash
-  npm run watch
+npm run watch
 ```
-
