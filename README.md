@@ -36,6 +36,9 @@ Start both Front-End and Back-End Servers
 npm run watch
 ```
 
+## API Used
+* SpaceX API: [Link](https://github.com/r-spacex/SpaceX-API)
+
 ## Packages Used
 
 * [**Express**](https://expressjs.com/) -> Express is a back end web application framework for building RESTful APIs with Node.js
