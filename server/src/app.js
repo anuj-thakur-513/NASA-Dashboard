@@ -13,10 +13,11 @@ app.use(
   })
 );
 
+// used for logging all the current machine's info and error info too
 app.use(morgan("combined"));
 
 app.use(express.json()); // middleware to parse JSON
-app.use(express.static(path.join(__dirname, "..", "public"))); // middleware to serve frontend
+app.use(express.static(path.join(__dirname, "..", "public"))); // middleware to serve built frontend
 
 app.use("/v1", v1); // v1 api calls
 // root router
